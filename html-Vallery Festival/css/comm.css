@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -.06em;
+}
+
+.blind {
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    line-height: 0;
+}
+
+.wrap  {
+    /* position: relative; */
+    width: 1000px;
+    padding-left: 213px;
+}
+
+header {
+    position: fixed; top: 0; left: 0; bottom: 0;
+    width: 213px;
+    height: 650px;
+    z-index: 1;
+}
+
+header .logo a {
+    margin: 0 auto;
+    display: block;
+    width: 151px; height: 47px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -9999px;
+}
+
+nav {
+    margin-top : 50px;
+}
+
+.nav-depth1 li:hover .nav-depth2{ 
+    display: block;
+    height: auto; padding: 10px 0;
+    
+}
+
+.nav-depth1 > li > a {
+    display: block;
+    height: 50px;
+    padding: 0 72px;
+    text-align: center;
+    
+}
+
+.nav-depth1 > li  {
+    position: relative;
+    
+}
+
+.nav-depth1 > li > a:hover {
+    font-weight: bold;
+    color: #333333;
+}
+
+.nav-depth2{
+    position: absolute; top: 0; left: 213px;
+    overflow: hidden;
+    background: #ffffff;
+    width: 100%;
+    padding : 0; height: 0;
+    
+    transition: all .2s;
+    
+}
+
+.nav-depth2 a {
+
+display: block;
+height: 30px;
+text-align: center;
+padding: 5px 0;
+}
+
+.nav-depth2 li:hover a {
+   
+    background: #ffffff;
+    color: #333333;
+    font-weight: bold;
+}
+
+
+.slide  {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.slide img {
+    display: block;
+    width: 787px;
+    height: 350px;
+}
+
+.slide ul {
+    display: flex;
+    position: absolute; top: 0; left: 0;
+}
+
+.container {
+    padding: 10px 0px 10px 10px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .tab, .container section {
+    width : 33%;
+}
+
+.tab {
+    position: relative;
+}
+
+.tab::after {
+    content: '';
+    position: absolute; 
+    width: 100%; height: 3px;
+    background: #222328;
+     top: 45px; left: 0; 
+}
+
+.sec-tit a {
+    display: block;
+width : 256.41px; height : 48px;
+background: #ffffff;
+text-align: center; line-height: 48px;
+font-weight: normal;
+}
+
+.tab .lst-bbs li {
+    width: 256.41px;
+}
+
+.tab  .lst-bbs a {
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 2px 0 0 20px;
+}
+
+.tab .lst-bbs a::before {
+    content: "\f105";
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    color: #000;
+    position: absolute; top: 12%; left: 0;
+    display: inline-block;
+
+}
+
+.gallery_tab {
+    position: relative;
+}
+
+.gallery_tab::after {
+    content: '';
+    position: absolute; 
+    width: 100%; height: 3px;
+    background: #222328;
+     top: 45px; left: 0; 
+}
+
+.gallery_tab .sec-cont {
+    width: 100%;
+    position: absolute; top: 68.5px; left: 0;
+
+}
+
+.lst-gallery img {
+    width: 95%;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #dae1e6;
+}
+
+.lst-gallery {
+    display: flex; justify-content: space-between;
+}
+
+.lst-gallery li:first-child {
+    width: 33%;
+    text-align: left;
+
+}
+
+
+.lst-gallery li:nth-child(2) {
+    width: 33%;
+    text-align: center;
+
+}
+
+.lst-gallery li:last-child {
+    width: 33%;
+    text-align: right;
+
+}
+
+.sec-goto .lst-goto{
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    }
+
+    .lst-goto li {
+        width: 48%;
+    }
+
+    .lst-goto a {
+        position: relative;
+        display: flex;
+        justify-content: center; align-items: flex-end;
+        height: 85px;
+        background: #fff;
+    }
+
+    .lst-goto i {
+        position: absolute; top: -7px; left: 20px;
+        font-size : 6em;
+    }
+
+footer {
+    display: flex; justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+}
+
+footer h1 {
+    display: flex; align-items: center;
+}
+
+footer h1 a {
+    display: block;
+    width: 100px; height: 31px;
+    background: url(../images/logo_footer.png) no-repeat;
+    text-indent: -9999px;
+}
+
+footer .copyright {
+    font-size: 10px;
+    display: flex; align-items: center;
+}
+
+footer .family_site{
+    width: 151px;
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: space-between; 
+    align-items: center;
+}
+
+footer .family_site a {
+
+    width: 41%;
+    font-size: 10px;
+}
+
+
+footer .family_site a::before {
+    
+    display: inline-block;
+    content: "\f105";
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    font-size: 1em;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#modal {
+    display: none;
+    justify-content: center; align-items: center;
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,.7);
+}
+#modal .box {
+    position: relative;
+    width: 500px; height: 300px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+#modal .btn-close {
+position: absolute; top: -20px; right: -20px;
+width: 50px; height: 50px;
+border-radius: 50%;
+border: none;
+cursor: pointer;
+}
+
+#modal .btn-close::before {
+
+    content: "\f00d";
+    margin-right: -3px;
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    font-size: 2em; color: #fff;
+}
